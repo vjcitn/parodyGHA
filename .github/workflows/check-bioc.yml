@@ -148,11 +148,6 @@ jobs:
           remotes::install_cran("BiocManager")
         shell: Rscript {0}
 
-      - name: Set BiocVersion
-        run: |
-          BiocManager::install(version = "${{ matrix.config.bioc }}", ask = FALSE, site_repository=${{ matrix.config.siterep }})
-          shell: Rscript {0}
-
       - name: Install dependencies pass 1
         run: |
           ## Try installing the package dependencies in steps. First the local
