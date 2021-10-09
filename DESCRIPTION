@@ -1,6 +1,6 @@
 Package: parodyGHA
 Title: Parametric And Resistant Outlier DYtection
-Version: 1.51.4
+Version: 1.51.4001
 Authors@R:
     person(given = "Vince",
            family = "Carey",
