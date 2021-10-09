@@ -150,7 +150,7 @@ jobs:
 
       - name: Set BiocVersion
         run: |
-          BiocManager::install(version = "${{ matrix.config.bioc }}", ask = FALSE, site_repository=AnVIL::repositories()["BiocBinaries"])
+          BiocManager::install(version = "${{ matrix.config.bioc }}", ask = FALSE, site_repository=AnVIL::repositories()[1])
           shell: Rscript {0}
 
       - name: Install dependencies pass 1
