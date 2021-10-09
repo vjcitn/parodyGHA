@@ -265,7 +265,6 @@ jobs:
         ## makes the git history recognizable by pkgdown.
 
       - name: Upload check results
-        if: failure()
         uses: actions/upload-artifact@master
         with:
           name: ${{ runner.os }}-biocversion-RELEASE_3_13-r-4.1-results
