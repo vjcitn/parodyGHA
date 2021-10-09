@@ -1,5 +1,5 @@
-library(parody)
+library(parodyGHA)
 library(testthat)
 
-test_check("parody")
+test_check("parodyGHA")
 
