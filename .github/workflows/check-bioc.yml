@@ -148,6 +148,13 @@ jobs:
           message(paste('****', Sys.time(), 'installing BiocManager ****'))
           remotes::install_cran("BiocManager")
         shell: Rscript {0}
+        
+      - name: Install AnVIL for Windows
+        if: runner.os == 'Windows'
+        run: |
+          BiocManager::install("AnVIL")
+          ## Edit below if you have any Windows system dependencies
+        shell: Rscript {0}
 
       - name: Install dependencies pass 1
         run: |
