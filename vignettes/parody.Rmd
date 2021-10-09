@@ -1,11 +1,11 @@
 ---
-title: "parody: parametric and resistant outlier dytection"
+title: "parody: parametric and resistant outlier dytection -- github actions demo"
 shorttitle: "outlier dytection methods"
 author: "Vincent J. Carey, stvjc at channing.harvard.edu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{parody: parametric and resistant outlier dytection}
+  %\VignetteIndexEntry{parody: parametric and resistant outlier dytection -- github actions demo}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
@@ -16,7 +16,7 @@ output:
 ---
 ```{r setuppp,echo=FALSE}
 suppressPackageStartupMessages({
-library(parody)
+library(parodyGHA)
 library(BiocStyle)
 })
 ```
@@ -63,7 +63,7 @@ the various labeling rules; users may
 mix components to define their own procedures.
 
 ```{r do1}
-library(parody)
+library(parodyGHA)
 ```
 
 We define a dataset presented in Rosner (1983).
