@@ -54,6 +54,7 @@ jobs:
         config:
           - { os: ubuntu-latest, r: '4.1', bioc: '3.13', cont: "us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor:3.13.3", rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest" }
           - { os: windows-latest, r: '4.1', bioc: '3.13'}
+          - { os: macOS-latest, r: 'devel', bioc: '3.13'}
           
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
